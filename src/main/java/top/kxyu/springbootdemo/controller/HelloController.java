@@ -1,6 +1,5 @@
 package top.kxyu.springbootdemo.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
  */
 //只返回字符串/json 使用下面注解
 //@RestController
-@Controller
+@RestController
 public class HelloController {
 
 
@@ -24,7 +23,7 @@ public class HelloController {
 
 	@GetMapping("/test/get")
 	public String get() {
-		return "get";
+		return "Get";
 	}
 
 	@PostMapping("/test/post")
